@@ -1,13 +1,11 @@
 {
   "compilerOptions": {
+    "typeRoots": ["./node_modules/@types", "./src/types"],
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
+    "strictNullChecks": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
@@ -21,6 +19,8 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
-  ]
+    "src/**/*.ts" // *** The files TypeScript should type check ***
+, "src/assets/SvgLoading.js", "src/index.tsx", "src/App.tsx", "src/Pages/Avatar/styles.js"  ],
+  "exclude": ["node_modules", "dist", "src/server/**/*"], // *** The files to not type check ***
+  "types": ["node"]
 }

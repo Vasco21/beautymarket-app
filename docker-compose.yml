@@ -1,0 +1,26 @@
+version: '3.7'
+services:
+    web:
+        container_name: computershopreact
+        build:
+          context: .
+          dockerfile: Dockerfile
+        volumes:
+          - '.:/web'
+          - '/web/node_modules'
+        ports:
+          - '3000:3000'
+        environment:
+          - NODE_ENV=development
+
+    # https://www.cypress.io/blog/2019/05/02/run-cypress-with-a-single-docker-command/
+    cypress:
+      image: "cypress/included:3.2.0"
+      depends_on:
+        - web
+      environment:
+        - CYPRESS_baseUrl=http://web:3000
+      working_dir: /e2e
+      volumes:
+        - ./:/e2e
+
