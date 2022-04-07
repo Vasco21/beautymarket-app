@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { MdShoppingBasket } from 'react-icons/md';
-
 import { ProductList, StockCounter } from './styles';
 import api from '../../services/api';
-
+import { Container  } from '../AboutUs/styles';
 import { useCart } from '../../hooks/useCart';
 import { Cart, CartItem } from '../../interfaces/Cart';
 import Header from './components/Header';
@@ -14,6 +13,8 @@ import cartMapper from '../../mapper/cart-mapper';
 import { setToLocalStorage } from '../../helper/local-storage';
 import { VASCO_NA_WEB_ALL_ITEMS } from '../../constants/local-storage';
 import { API_URL_CART } from '../../constants/api-url';
+
+
 
 interface CartItemsQuantity {
   [key: string]: number;
@@ -52,7 +53,7 @@ export default function Home() {
   }, {} as CartItemsQuantity);
 
   return (
-    <>
+    <div className="buttonBtn">
       <Header />
       <h1>New Feshion</h1>
       <ProductList>
@@ -80,8 +81,14 @@ export default function Home() {
           </li>
         ))}
       </ProductList>
+      <Container>
+        <button   type="button" className="custom__button" color="Blue"><a href="looks">
+            <p>More...</p>
+          </a>
+        </button>
+      </Container>
 
       {allProducts?.length === 0 && <Loading />}
-    </>
+    </div>
   );
 }

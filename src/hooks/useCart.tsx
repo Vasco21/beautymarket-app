@@ -120,7 +120,7 @@ import {
     
             addToast({
               type: 'success',
-              title: 'Sucesso!',
+              title: 'success!',
               description: `"${newItem?.product.sku}" has been added to cart`
             });
           }

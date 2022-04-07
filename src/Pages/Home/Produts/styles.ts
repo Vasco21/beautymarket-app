@@ -5,7 +5,6 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  
 `;
 
 
@@ -66,4 +65,3 @@ export const ProductList = styled.ul`
 export const StockCounter = styled.div`
   font-size: 1.2rem;
 `;
-

@@ -123,7 +123,7 @@ img {
   }
   
   .custom__button {
-    background-color: var(--color-crimson);
+      background-color: var(--color-crimson);
       color: var(--color-black);
       font-family: var(--font-base);
       font-weight: 700;

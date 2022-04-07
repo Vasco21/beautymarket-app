@@ -1,0 +1,25 @@
+.selfie-container {
+    border-radius: 25px;
+    height: auto !important;
+    width: 100%;
+    /* width: calc(100% - 40px) !important; */
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  video {
+    border-radius: 25px;
+    border: 4px solid #000;
+    box-sizing: border-box;
+  }
+  
+  .camera-overlay {
+    border: 2px solid red;
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    width: calc(100% - 40px);
+    border-radius: 25px;
+    box-sizing: border-box;
+  }
+  

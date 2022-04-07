@@ -14,7 +14,7 @@ const EmailForm = props => {
 
     function getOrCreateUser(callback) {
         axios.put(
-           'https://api.chatengine.io/users/',
+            'https://api.chatengine.io/users/',
             {username: email, email: email, secret: email},
             {headers: {"Private-Key": process.env.REACT_APP_CE_PRIVATE_KEY}}
         )
@@ -25,7 +25,7 @@ const EmailForm = props => {
     function getOrCreateChat(callback) {
         axios.put(
             'https://api.chatengine.io/chats/',
-            {usernames: [email, 'Adam La Morre'], is_direct_chat: true},
+            {usernames: [email, 'Eddie Eti'], is_direct_chat: true},
             {headers: {
                 "Project-ID": process.env.REACT_APP_CE_PROJECT_ID,
                 "User-Name": email,
@@ -58,7 +58,7 @@ const EmailForm = props => {
             style={{
                 ...styles.emailFormWindow,
                 ...{ 
-                    height: props.visible ? '100%' : '0px',
+                    height: props.visible ? '100%' : '0%',
                     opacity: props.visible ? '1' : '0'
                 }
             }}
@@ -123,4 +123,4 @@ const EmailForm = props => {
     )
 }
 
-export default EmailForm;
+export default EmailForm; 

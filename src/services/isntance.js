@@ -1,21 +1,26 @@
-const API_KEY = 'https://uzuriapi.el.r.appspot.com/looks'
-const API_BASE = 'https://uzuriapi.el.r.appspot.com/looks'
+import React from 'react';
+import axios from "axios";
 
-const basicFetch = async endpoint => {
-    const req = await fetch(`${API_BASE}${endpoint}`)
-    const json = await req.json()
-    return json
-  }
+const instance = axios.create({
+    baseURL: 'https://uzuriapi.el.r.appspot.com/looks'
 
-  // eslint-disable-next-line
-  export default {
-    getHomeList: async () => {
-        return [
-            {
-                slug: "Connect",
-                title: "@Vasco",
-                items: await basicFetch(`/discover/tv?with_network=213&language=pt-BR&api_key=${API_KEY}`)
-            }
-        ]
-    }
-}
+  });
+
+
+  instance.registerInterceptWithStore = (store) => {
+    instance.interceptors.response.use(
+        (response) => {
+            const { data } = response;
+            if (data && !data.success && (data.httpStatusCode === 403 || data.httpStatusCode === 401))
+            alert('signOut');
+            return response;
+        },
+        (err) => {
+            if(err.response.status === 403 || err.response.status === 401) alert('signOut');
+            return err
+        }
+    );
+};
+
+
+export default instance;

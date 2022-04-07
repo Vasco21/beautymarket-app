@@ -4,6 +4,8 @@ import {
     AiOutlineHistory,
     AiOutlineHome,
     AiOutlineMoneyCollect,
+    AiFillCamera,
+    AiFillWechat,
     AiOutlineUser
 } from 'react-icons/ai';
 import { FaCog, FaOpencart } from 'react-icons/fa';
@@ -23,14 +25,24 @@ export const SidebarData: SidebarItem[] = [
                 icon: <AiOutlineUser />
             },
             {
+                title: 'Chats',
+                path: '/avatar',
+                icon: <AiFillWechat />
+            },
+            {
                 title: 'Team',
                 path: '/team',
-                icon: <AiOutlineMoneyCollect />
+                icon: <AiOutlineUser />
             },
             {
                 title: 'Snap',
-                path: '/snap',
-                icon: <AiOutlineMoneyCollect />
+                path: '/camera',
+                icon: <AiFillCamera />
+            },
+            {
+                title: 'Looks',
+                path: '/looks',
+                icon: <AiOutlineMoneyCollect/>
             },
             
         ]
@@ -38,7 +50,7 @@ export const SidebarData: SidebarItem[] = [
     {
         title: 'Order',
         path: '/cart',
-        icon: <FaOpencart />
+        icon: <FaOpencart />,
     },
     {
         title: 'History',
@@ -46,8 +58,8 @@ export const SidebarData: SidebarItem[] = [
         icon: <AiOutlineHistory />
     },
     {
-        title: 'Configurations',
-        path: '/configurations',
+        title: 'allProduct',
+        path: '/allpro',
         icon: <FaCog />
     }
 ];

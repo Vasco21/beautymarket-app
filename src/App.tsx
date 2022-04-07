@@ -1,18 +1,25 @@
 import React, { Children } from 'react';
 import { useRoutes } from 'react-router-dom';
+import LooksItems from './Pages/Home/Produts';
 
 import Home from './Pages/Home';
+// import HomePage from './srcs/pages/HomePage'
 import Cart from './Pages/Cart';
 import Menu from './components/Slider/sidebar';
+
 
 import CartList from './Pages/CartList';
 import CartPayment from './Pages/CartPayment';
 import CartConfirmation from './Pages/CartConfirmation';
 
+
 import AboutUs from './Pages/AboutUs';
 import Team from './Pages/Team';
-// import Camera from './Pages/camera';
-import SupportAdmin from './Pages/SupportAdmin';
+import Footer from './Pages/Footer/Footer';
+
+
+import Camera from './Pages/camera/Camera';
+// import SupportAdmin from './Pages/Avatar/SupportAdmin';
 
 import AppProvider from './provider/AppProvider';
 
@@ -22,7 +29,7 @@ import { AppContainer } from './Styles/styles';
 function App() {
   console.info(`==> 🌎  You are in the mode ${process.env.NODE_ENV}`);
   console.info(`==> 🌎  You are in the environment ${process.env.REACT_APP_ENVIRONMENT}`);
-  // const path = window.location.pathname
+ 
 
   const navaBar = {
     path: '/',
@@ -31,23 +38,26 @@ function App() {
   const aboutTeam = {
     path: '/',
     element: <AboutUs />,
-    _Children: [
-    ],
-
   }
   const teamM = {
     path: '/team',
     element: <Team/>,
   }
-  // const picture = {
-  //   path: '/snap',
-  //   element: <Camera />,
-  // }
+  const NewLooks = {
+    path: '/looks',
+    element: <LooksItems/>,
+  }
+  const picture = {
+    path: '/camera',
+    element: <Camera />,
+  }
 
   const mainRoutes = {
     path: '/',
     element: <Home/>
   };
+
+  
 
   const cartRoutes = {
     path: 'cart/*',
@@ -58,10 +68,9 @@ function App() {
       { path: 'confirmation', element: <CartConfirmation /> }
     ]
   };
-  const navigations = useRoutes([navaBar, teamM]);
-  // const TeamMeat = useRoutes([teamM])
+  const navigations = useRoutes([navaBar, teamM, picture]);
   const aboutUs = useRoutes([aboutTeam])
-  const routing = useRoutes([mainRoutes, cartRoutes]);
+  const routing = useRoutes([mainRoutes, cartRoutes,NewLooks]);
 
   return (
     <AppContainer>
@@ -69,8 +78,7 @@ function App() {
         {navigations}
         {routing}
         {aboutUs}
-        {/* {TeamMeat} */}
-        {/* { path.indexOf('/support') === -1 ? <Home /> : <SupportAdmin /> } */}
+        <Footer />
         <GlobalStyle />
       </AppProvider>
     </AppContainer>

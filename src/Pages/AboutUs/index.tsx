@@ -1,7 +1,10 @@
 import React from "react";
 import images from '../../assets/pretty.png';
 import { Container } from './styles';
-import Avatar from '../Avatar/index'
+import SupportEngine from "../Avatar/SupportEngine/";
+const path = window.location.pathname
+import SupportAdmin from '../Avatar/SupportAdmin'
+
 
 const SubHeading = () => (
     <div style={{ marginBottom: '1rem' }}>
@@ -31,7 +34,8 @@ const AboutUs: React.FC = () => {
           <img src={images} alt="header_img" />
         </div>
       </div>
-      <Avatar/>
+      {/* <SupportEngine /> */}
+      { path.indexOf('/team') === -1 ? <SupportEngine  /> : <SupportAdmin /> }
     </Container>
   );
 };

@@ -20,7 +20,7 @@
   },
   "include": [
     "src/**/*.ts" // *** The files TypeScript should type check ***
-, "src/assets/SvgLoading.js", "src/index.tsx", "src/App.tsx", "src/Pages/Avatar/styles.js"  ],
+, "src/assets/SvgLoading.js", "src/index.tsx", "src/App.tsx", "src/Pages/Avatar/styles.js", "src/hool/useCarts.tsx", "src/Pages/Home/Produts/index.tsx"  ],
   "exclude": ["node_modules", "dist", "src/server/**/*"], // *** The files to not type check ***
-  "types": ["node"]
+  "types": ["node", "webpack-env"]
 }
