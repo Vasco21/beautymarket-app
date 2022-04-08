@@ -3,7 +3,6 @@ import { useRoutes } from 'react-router-dom';
 import LooksItems from './Pages/Home/Produts';
 
 import Home from './Pages/Home';
-// import HomePage from './srcs/pages/HomePage'
 import Cart from './Pages/Cart';
 import Menu from './components/Slider/sidebar';
 
@@ -47,6 +46,10 @@ function App() {
     path: '/looks',
     element: <LooksItems/>,
   }
+  // const items ={
+  //   path: '/',
+  //   element: <newItems/>, 
+  // }
   const picture = {
     path: '/camera',
     element: <Camera />,
@@ -76,11 +79,12 @@ function App() {
     <AppContainer>
       <AppProvider>
         {navigations}
+        
         {routing}
         {aboutUs}
         <Footer />
-        <GlobalStyle />
       </AppProvider>
+        <GlobalStyle /> 
     </AppContainer>
   );
 }

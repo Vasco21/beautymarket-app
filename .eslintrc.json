@@ -41,7 +41,7 @@
   
     "rules": {
       "prettier/prettier": "off",
-  
+      "react/display-name": "off",
       "no-unused-vars": "off",
       "no-empty-function": "warn",
       "no-case-declarations": "off",

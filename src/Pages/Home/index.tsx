@@ -13,6 +13,7 @@ import cartMapper from '../../mapper/cart-mapper';
 import { setToLocalStorage } from '../../helper/local-storage';
 import { VASCO_NA_WEB_ALL_ITEMS } from '../../constants/local-storage';
 import { API_URL_CART } from '../../constants/api-url';
+import NewItems from '../LooksItems/index'
 
 
 
@@ -55,11 +56,13 @@ export default function Home() {
   return (
     <div className="buttonBtn">
       <Header />
+      <NewItems/>
       <h1>New Feshion</h1>
       <ProductList>
         {allProducts.map((item: CartItem) => (
           <li key={item.product.sku}>
             <img src={item.product.imageObjects[0].small} alt={item.product.sku} />
+            <h1>{item.product.name}</h1>
             <p>{item.product.description}</p>
             <span>{formatCurrency(item.product.priceSpecification.price)}</span>
 

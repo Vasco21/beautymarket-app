@@ -60,8 +60,11 @@ export default function Home() {
         {allProducts.map((item: CartItem) => (
           <li key={item.itemName}>
             <img src={item.itemURL} alt={item.itemName} />
-            <h3>{item.itemName}</h3>
+            <h1>{item.itemName}</h1>
+            <p>{item.itemDescription}</p>
             <span>{formatCurrency(item.price)}</span>
+            <h2>By {item.promoterName}</h2>
+
 
             <Button
               onClick={() => addProduct(item.itemName)}

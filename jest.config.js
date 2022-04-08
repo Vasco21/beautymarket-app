@@ -10,3 +10,4 @@ module.exports = {
     '^.+\\.(css|sass|scss)$': 'identity-obj-proxy'
   }
 };
+
