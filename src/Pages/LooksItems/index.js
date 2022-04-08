@@ -206,13 +206,14 @@ const CarouselSlideItem = ({ pos, idx, activeIdx }) => {
 
   return (
     <li className="carousel__slide-item" style={item.styles}>
+        
       <div className="carousel__slide-item-img-link">
         <img src={item.player.lookURL} alt={item.player.hashtag} />
       </div>
       <div className="carousel-slide-item__body">
-        <h4>{item.player.hashtag}</h4>
+        <h3>{item.player.hashtag}</h3>
         <p>{item.player.likes} likes</p>
-        <h2>@ {item.player.requesterUsername}</h2>
+        <h3>@ {item.player.requesterUsername}</h3>
       </div>
     </li>
   );
@@ -259,6 +260,10 @@ export default function NewItems() {
 
   return (
     <>
+        <div className="start">
+            <h1>Connect</h1>
+            <p>@lwandlelam</p>
+        </div>
       <div className="carousel__wrap">
         <div className="carousel__inner">
           <button
