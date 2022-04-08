@@ -16,10 +16,36 @@ const SidebarLink = styled(Link)`
     font-size: 1.125rem;
     padding: 2rem;
     text-decoration: none;
-    color: black;
+    color:  black;
     &:hover {
         background-color: white;
         border-left: 4px solid #6d44dc;
+    }
+    @media (max-width: 350px){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 3.75rem;
+        font-size: 1.125rem;
+        padding: 2rem;
+        text-decoration: none;
+        color: black;
+        &:hover {
+            background-color: white;
+            border-left: 4px solid #6d44dc;
+    }
+    @media (max-width: 750px){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 3.75rem;
+        font-size: 1.125rem;
+        padding: 2rem;
+        text-decoration: none;
+        color: black;
+        &:hover {
+            background-color: white;
+            border-left: 4px solid #6d44dc;
     }
 `;
 
@@ -37,7 +63,31 @@ const DropdownLink = styled(Link)`
     text-decoration: none;
     color: black;
     &:hover {
-        background-color: white;
+    background-color: white;
+    }
+    @media (max-width: 350px){
+        display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 3.75rem;
+    font-size: 1.125rem;
+    padding-left: 3rem;
+    text-decoration: none;
+    color: black;
+    &:hover {
+    background-color: white;
+    }
+    @media (max-width: 750px){
+        display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 3.75rem;
+    font-size: 1.125rem;
+    padding-left: 3rem;
+    text-decoration: none;
+    color: black;
+    &:hover {
+    background-color: white;
     }
 `;
 

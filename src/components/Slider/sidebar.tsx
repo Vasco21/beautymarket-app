@@ -12,6 +12,15 @@ const Nav = styled.div`
     align-items: center;
     height: 5rem;
     background-color: rgba(0,0,29,0.22);
+
+
+    @media (max-width: 350px){
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 5rem;
+    background-color: rgba(0,0,29,0.22);
+    }
 `;
 
 const SidebarNav = styled.div<{ sidebar: boolean }>`
@@ -22,6 +31,26 @@ const SidebarNav = styled.div<{ sidebar: boolean }>`
     top: 0;
     left: ${({ sidebar }) => (sidebar ? '0' : '-100%')};
     transition: 350ms;
+
+    @media (max-width: 350px){
+    width: 200px;
+    height: 60vh;
+    background-color: rgba(0,0,29,0.22);
+    position: fixed;
+    top: 0;
+    left: ${({ sidebar }) => (sidebar ? '0' : '-100%')};
+    transition: 350ms;
+    }
+    @media (max-width: 850px){
+        width: 200px;
+        height: 60vh;
+        background-color: rgba(0,0,29,0.22);
+        position: fixed;
+        top: 0;
+        left: ${({ sidebar }) => (sidebar ? '0' : '-100%')};
+        transition: 350ms;
+        }
+    
 `;
 
 const NavIcon = styled(Link)`
@@ -31,6 +60,24 @@ const NavIcon = styled(Link)`
     height: 5rem;
     font-size: 2rem;
     margin-left: 2rem;
+
+    @media (max-width: 350px){
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 6rem;
+    font-size: 2rem;
+    margin-left: 2rem;
+    }
+    
+     @media (max-width: 850px){
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 6rem;
+    font-size: 2rem;
+    margin-left: 2rem;
+    }
 `;
 
 const SidebarWrap = styled.div``;

@@ -96,6 +96,9 @@ export const Div = styled.div`
   }
   
   @media (max-width: 767px) {
+    .footer{
+
+    }
     .footer-copywright {
       text-align: center !important;
     }
@@ -163,4 +166,5 @@ export const Div = styled.div`
   .fork-btn-inner::after {
     display: none !important;
   }
+
 `

@@ -4,6 +4,7 @@ import { Container } from './styles';
 import SupportEngine from "../Avatar/SupportEngine/";
 const path = window.location.pathname
 import SupportAdmin from '../Avatar/SupportAdmin'
+import Footer from '../Footer/Footer'
 
 
 const SubHeading = () => (
@@ -14,6 +15,7 @@ const SubHeading = () => (
   );
 const AboutUs: React.FC = () => {
   return (
+    <>
     <Container>
       <div className="app__header app__wrapper section__padding gradient__bg" id="home">
         <div className="app__wrapper_info ">
@@ -37,6 +39,8 @@ const AboutUs: React.FC = () => {
       {/* <SupportEngine /> */}
       { path.indexOf('/team') === -1 ? <SupportEngine  /> : <SupportAdmin /> }
     </Container>
+    <Footer/>
+    </>
   );
 };
 

@@ -13,7 +13,8 @@ import cartMapper from '../../mapper/cart-mapper';
 import { setToLocalStorage } from '../../helper/local-storage';
 import { VASCO_NA_WEB_ALL_ITEMS } from '../../constants/local-storage';
 import { API_URL_CART } from '../../constants/api-url';
-import NewItems from '../LooksItems/index'
+import NewItems from '../LooksItems/index';
+
 
 
 

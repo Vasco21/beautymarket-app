@@ -11,11 +11,8 @@ import CartList from './Pages/CartList';
 import CartPayment from './Pages/CartPayment';
 import CartConfirmation from './Pages/CartConfirmation';
 
-
 import AboutUs from './Pages/AboutUs';
 import Team from './Pages/Team';
-import Footer from './Pages/Footer/Footer';
-
 
 import Camera from './Pages/camera/Camera';
 // import SupportAdmin from './Pages/Avatar/SupportAdmin';
@@ -82,7 +79,7 @@ function App() {
         
         {routing}
         {aboutUs}
-        <Footer />
+        
       </AppProvider>
         <GlobalStyle /> 
     </AppContainer>

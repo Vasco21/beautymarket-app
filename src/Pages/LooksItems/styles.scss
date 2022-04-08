@@ -2,7 +2,6 @@ $slide-count: 12;
 $slide-width: 30rem;
 
 
-  
 
 body {
   font-size: 1.5rem;
@@ -194,3 +193,55 @@ a {
     }
   }
 }
+@media (max-width: 500px) {
+    .carousel__wrap {
+        margin-top: 1%;
+        margin-bottom: 10%;
+        align-items: center;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        position: relative;
+        width: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .carousel__dots {
+        display: none;
+    }    
+  }
+
+  @media (max-width: 900px) {
+    .carousel__wrap {
+        margin-top: 1%;
+        margin-bottom: 10%;
+        align-items: center;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        position: relative;
+        width: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .carousel__dots {
+        display: none;
+    }    
+  }
+  @media (max-width: 350px) {
+    .carousel__wrap {
+        margin-top: 1%;
+        margin-bottom: 10%;
+        align-items: center;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        position: relative;
+        width: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .carousel__dots {
+        display: none;
+    }    
+  }

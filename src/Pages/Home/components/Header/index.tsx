@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { MdShoppingBasket } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 
+
 import { Header, CartInfo } from './styles';
 import Logo from '../../../../assets/shopping-cart.png';
 
@@ -39,6 +40,7 @@ export default function Home() {
           <MdShoppingBasket size={36} color="white" />
         </div>
       </CartInfo>
+      
     </Header>
   );
 }
