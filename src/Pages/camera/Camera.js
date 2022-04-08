@@ -73,7 +73,7 @@ const Camera = (props) => {
     setLoading(false);
   };
 
-  const confirmHandling = () => {};
+  // const confirmHandling = () => {};
 
   const retakePhoto = () => {
     setImgSrc(null);
@@ -185,7 +185,7 @@ const Camera = (props) => {
               />
               <button
                 className="common-confirm-button"
-                onClick={confirmHandling}
+                // onClick={confirmHandling}
               >
                 CONFIRM
               </button>

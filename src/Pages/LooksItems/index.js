@@ -259,7 +259,8 @@ export default function NewItems() {
   }, [items]);
 
   return (
-    <>
+    <>  
+        <h1>New Looks</h1>
         <div className="start">
             <h1>Connect</h1>
             <p>@lwandlelam</p>
