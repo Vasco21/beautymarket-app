@@ -5,7 +5,32 @@ import { IconContext } from 'react-icons';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { SidebarData } from './sidebarData';
 import Submenu from './subMenu';
+import Signing from '../../NavInfo/Navbar'
 
+
+const Div = styled.div`
+h4{
+    text-align: center;
+    background-color: purple;
+    color: white;
+}
+
+}
+`
+const Navs = styled.div`
+p{
+    background-color: gray;
+    text-align: right;
+    padding: 1.5rem;
+    
+}
+a{
+    color: white;
+    margin-top: 2rem;
+    text-decoration: underline;
+
+}
+`
 const Nav = styled.div`
     display: flex;
     justify-content: flex-start;
@@ -22,11 +47,10 @@ const Nav = styled.div`
     background-color: rgba(0,0,29,0.22);
     }
 `;
-
 const SidebarNav = styled.div<{ sidebar: boolean }>`
     width: 250px;
     height: 100vh;
-    background-color: rgba(0,0,29,0.22);
+    background-color: white;
     position: fixed;
     top: 0;
     left: ${({ sidebar }) => (sidebar ? '0' : '-100%')};
@@ -44,13 +68,12 @@ const SidebarNav = styled.div<{ sidebar: boolean }>`
     @media (max-width: 850px){
         width: 200px;
         height: 60vh;
-        background-color: rgba(0,0,29,0.22);
+        background-color: white;
         position: fixed;
         top: 0;
         left: ${({ sidebar }) => (sidebar ? '0' : '-100%')};
         transition: 350ms;
         }
-    
 `;
 
 const NavIcon = styled(Link)`
@@ -70,7 +93,7 @@ const NavIcon = styled(Link)`
     margin-left: 2rem;
     }
     
-     @media (max-width: 850px){
+    @media (max-width: 850px){
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -87,6 +110,18 @@ const Sidebar: FC = () => {
     const showSidebar = () => setSidebar(!sidebar);
 
     return (
+        <>
+        <Div>
+        <h4 className="top">Please note: While our Salon are currently open,
+         you can enjoy a safe shopping experience without leaving your space,
+          when you shop online today.</h4>
+        </Div>
+        <Navs>
+        <p>
+        <a href="#">See all offers</a>
+        </p>
+        </Navs>
+        <Signing/>
         <IconContext.Provider value={{ color: 'black' }}>
             <Nav>
                 <NavIcon to="#" onClick={showSidebar}>
@@ -104,6 +139,8 @@ const Sidebar: FC = () => {
                 </SidebarWrap>
             </SidebarNav>
         </IconContext.Provider>
+        
+        </>
     );
 };
 

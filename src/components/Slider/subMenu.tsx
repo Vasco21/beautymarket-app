@@ -18,7 +18,7 @@ const SidebarLink = styled(Link)`
     text-decoration: none;
     color:  black;
     &:hover {
-        background-color: white;
+        background-color: pink;
         border-left: 4px solid #6d44dc;
     }
     @media (max-width: 350px){
@@ -31,7 +31,7 @@ const SidebarLink = styled(Link)`
         text-decoration: none;
         color: black;
         &:hover {
-            background-color: white;
+            background-color: pink;
             border-left: 4px solid #6d44dc;
     }
     @media (max-width: 750px){
@@ -44,7 +44,7 @@ const SidebarLink = styled(Link)`
         text-decoration: none;
         color: black;
         &:hover {
-            background-color: white;
+            background-color: pink;
             border-left: 4px solid #6d44dc;
     }
 `;
@@ -63,7 +63,7 @@ const DropdownLink = styled(Link)`
     text-decoration: none;
     color: black;
     &:hover {
-    background-color: white;
+    background-color: pink;
     }
     @media (max-width: 350px){
         display: flex;
@@ -75,7 +75,7 @@ const DropdownLink = styled(Link)`
     text-decoration: none;
     color: black;
     &:hover {
-    background-color: white;
+    background-color: pink;
     }
     @media (max-width: 750px){
         display: flex;
@@ -87,7 +87,7 @@ const DropdownLink = styled(Link)`
     text-decoration: none;
     color: black;
     &:hover {
-    background-color: white;
+    background-color: pink;
     }
 `;
 
