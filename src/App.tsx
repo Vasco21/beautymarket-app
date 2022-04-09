@@ -14,7 +14,7 @@ import AppProvider from './provider/AppProvider';
 import GlobalStyle from './Styles/global';
 import { AppContainer } from './Styles/styles';
 
-// import Contact from './NavInfo/Contact/indenx';
+import Contacts from './NavInfo/Contact/indenx';
 // import FindStore from './NavInfo/FindStore/index';
 // import CreateAndAcc from './NavInfo/CreateAndAcc/index';
 // import Signin from './NavInfo/SignIn/index';
@@ -33,6 +33,11 @@ function App() {
     path: '/',
     element: <AboutUs />,
   }
+  const contactInfo = {
+    path: '/contact',
+    element: <Contacts />,
+  }
+
   const teamM = {
     path: '/team',
     element: <Team/>,
@@ -65,6 +70,7 @@ function App() {
   };
  
   const navigations = useRoutes([navaBar, teamM, picture]);
+  const contact = useRoutes([contactInfo])
   const aboutUs = useRoutes([aboutTeam])
   const routing = useRoutes([mainRoutes, cartRoutes,NewLooks]);
 
@@ -76,6 +82,7 @@ function App() {
       <AppProvider>
         {routing}
         {aboutUs}
+        {contact}
       <GlobalStyle /> 
       </AppProvider>
     </AppContainer>
