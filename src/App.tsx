@@ -24,6 +24,7 @@ function App() {
   console.info(`==> 🌎  You are in the mode ${process.env.NODE_ENV}`);
   console.info(`==> 🌎  You are in the environment ${process.env.REACT_APP_ENVIRONMENT}`);
  
+ 
   const navaBar = {
     path: '/',
     element: < Menu/>,

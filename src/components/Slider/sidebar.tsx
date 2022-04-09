@@ -22,13 +22,12 @@ p{
     background-color: gray;
     text-align: right;
     padding: 1.5rem;
-    
+    font-weight:550;
 }
 a{
     color: white;
     margin-top: 2rem;
     text-decoration: underline;
-
 }
 `
 const Nav = styled.div`

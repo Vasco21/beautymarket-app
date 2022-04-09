@@ -55,10 +55,10 @@ export default function Home() {
   }, {} as CartItemsQuantity);
 
   return (
-    <div className="buttonBtn">
-      <Header />
-      <NewItems/>
-      <h1>New Feshion</h1>
+    <>
+       <Header />
+      <NewItems/>   
+      <h1>New Feshion</h1> 
       <ProductList>
         {allProducts.map((item: CartItem) => (
           <li key={item.product.sku}>
@@ -93,6 +93,6 @@ export default function Home() {
       </Container>
 
       {allProducts?.length === 0 && <Loading />}
-    </div>
+    </>
   );
 }

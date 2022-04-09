@@ -245,5 +245,23 @@ img {
       line-height: 70px;
     }
   }
+  @media screen and (max-width: 350px) {
+    .p__opensans {
+      font-size: 12px;
+    }
+  
+    .p__cormorant {
+      font-size: 19px;
+    }
+  
+    .headtext__cormorant {
+      font-size: 45px;
+      line-height: 70px;
+    }
+    .app__wrapper_img img{
+        width: 80%;
+        border-radius: 10%;
+    }
+  }
 
 `

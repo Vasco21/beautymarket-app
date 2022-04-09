@@ -13,8 +13,9 @@ const SidebarLink = styled(Link)`
     justify-content: space-between;
     align-items: center;
     height: 3.75rem;
-    font-size: 1.125rem;
-    padding: 2rem;
+    font-size: 1.8rem;
+    font-weight:550;
+    padding: 3rem;
     text-decoration: none;
     color:  black;
     &:hover {
@@ -26,7 +27,7 @@ const SidebarLink = styled(Link)`
         justify-content: space-between;
         align-items: center;
         height: 3.75rem;
-        font-size: 1.125rem;
+        font-size: 1.7rem;
         padding: 2rem;
         text-decoration: none;
         color: black;
@@ -58,8 +59,9 @@ const DropdownLink = styled(Link)`
     justify-content: flex-start;
     align-items: center;
     height: 3.75rem;
-    font-size: 1.125rem;
-    padding-left: 3rem;
+    font-size: 1.6rem;
+    font-weight:550;
+    padding-left: 3.5rem;
     text-decoration: none;
     color: black;
     &:hover {
@@ -70,7 +72,7 @@ const DropdownLink = styled(Link)`
     justify-content: flex-start;
     align-items: center;
     height: 3.75rem;
-    font-size: 1.125rem;
+    font-size: 1.6rem;
     padding-left: 3rem;
     text-decoration: none;
     color: black;

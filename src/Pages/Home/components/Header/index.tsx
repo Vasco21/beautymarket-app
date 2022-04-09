@@ -27,7 +27,7 @@ export default function Home() {
             <img src={Logo} />
           </div>
           <div>
-            <span>/Lapreshair&Beauty</span>
+            <span>/Lapreshair</span>
             <i>Cosmetic/</i>
           </div>
         </h1>

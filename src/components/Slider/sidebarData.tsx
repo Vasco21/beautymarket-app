@@ -20,8 +20,8 @@ export const SidebarData: SidebarItem[] = [
         iconOpened: <AiFillCaretUp />,
         subnav: [
             {
-                title: 'About Us',
-                path: '/aboutus',
+                title: 'Promotions',
+                path: '/promotions',
                 icon: <AiOutlineUser />
             },
             {
