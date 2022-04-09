@@ -3,7 +3,7 @@ import images from '../../assets/pretty.png';
 import { Container } from './styles';
 import SupportEngine from "../Avatar/SupportEngine/";
 const path = window.location.pathname
-import SupportAdmin from '../Avatar/SupportAdmin'
+// import SupportAdmin from '../Avatar/SupportAdmin'
 import Footer from '../Footer/Footer'
 
 
@@ -37,7 +37,7 @@ const AboutUs: React.FC = () => {
         </div>
       </div>
       {/* <SupportEngine /> */}
-      { path.indexOf('/team') === -1 ? <SupportEngine  /> : <SupportAdmin /> }
+      {/* { path.indexOf('/team') === -1 ? <SupportEngine  /> : <SupportAdmin /> } */}
     </Container>
     <Footer/>
     </>
