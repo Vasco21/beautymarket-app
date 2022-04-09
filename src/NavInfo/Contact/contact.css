@@ -1,4 +1,3 @@
-
 .contact-containter .contact-header h1{
     text-align: center;
     font-size: 50px;
@@ -24,16 +23,14 @@
     padding-top: 25px;
     color: white !important;
   }
-  
-  .home-about-social-links {
+.home-about-social-links {
     justify-content: center !important;
     padding-top: 15px !important;
     display: inline-block !important;
     position: relative !important;
     padding-inline-start: 0 !important;
   }
-  
-  .home-social-icons {
+.home-social-icons {
     position: relative !important;
     display: inline-block !important;
     width: 40px !important;
@@ -46,8 +43,7 @@
     transition: 0.5s !important;
   }
 
-  
-  .social .social-icons {
+.social .social-icons {
     display: inline-block !important;
     padding-right: 15px;
     padding-left: 15px;
@@ -123,146 +119,144 @@
 }
 
 @media screen and (max-width: 1280px){
-    .inTouch{
-        padding:20px;
-        margin: 30px auto;
-        height: 650px;
-        width:900px;
+.inTouch{
+    padding:20px;
+    margin: 30px auto;
+    height: 650px;
+    width:900px;
     }
-    .formWord{
-        height: 500px;
-        width: 450px;
+.formWord{
+    height: 500px;
+    width: 450px;
     }
-    .onMove{
-        min-height: 30vh;
+.onMove{
+    min-height: 30vh;
     }
-    .move{
-        height:45vh;
+.move{
+    height:45vh;
     }
-    .send{
-        width: 130px;
-        padding: 8px 0;    
+.send{
+    width: 130px;
+    padding: 8px 0;    
     }   
 }
 
 
 @media screen and (max-width: 1025px){
-    .inTouch{
-        padding:20px;
-        margin: 20px auto;
-        height:450px;
-        width:700px;   
+.inTouch{
+    padding:20px;
+    margin: 20px auto;
+    height:450px;
+    width:700px;   
     }
-    .formWord{
-        height: 397px;
-        width: 397px;
+.formWord{
+    height: 397px;
+    width: 397px;
+    }  
+.onMove{
+    min-height: 35vh;
     }
-  
-    .onMove{
-        min-height: 35vh;
+.move{
+    height:30vh;
     }
-    .move{
-        height:30vh;
+.formWord input{
+    height: 35px;
     }
-    .formWord input{
-        height: 35px;
-    }
-    .formWord textarea{
-        height:70px;
+.formWord textarea{
+    height:70px;
     }
     
 }
 @media screen and (max-width: 768px){
-    .inTouch{
-        padding:20px;
-        margin: 30px auto;
-        height: 410px;
-        width:450px;   
+.inTouch{
+    padding:20px;
+    margin: 30px auto;
+    height: 410px;
+    width:450px;   
     }
-    .formWord{
-        height:340px;
-        width:300px;
+.formWord{
+    height:340px;
+    width:300px;
     }
-    .onMove{
-        min-height: 35vh;
+.onMove{
+    min-height: 35vh;
     }
-    .move{
-        height:30vh;
+.move{
+    height:30vh;
     }
-    .formWord input{
-        height: 27px;
+.formWord input{
+    height: 27px;
     }
-    .formWord textarea{
-        height:50px;
+.formWord textarea{
+    height:50px;
     }
-    .send{
-        width: 100px;
-        padding: 6px 0;      
+.send{
+    width: 100px;
+    padding: 6px 0;      
     }
 }
 @media screen and (max-width: 490px){
-    .inTouch{
-        padding:20px;
-        margin: 30px auto;
-        height: 400px;
-        width:350px;   
+.inTouch{
+    padding:20px;
+    margin: 30px auto;
+    height: 400px;
+    width:350px;   
     }
-    .contact-containter .contact-liner h1{
-        font-size: 40px;
+.contact-containter .contact-liner h1{
+    font-size: 40px;
     }
-    .formWord{
-        height:300px;
-        width:290px;
+.formWord{
+    height:300px;
+    width:290px;
     }
   
-    .onMove{
-        min-height: 20vh;
+.onMove{
+    min-height: 20vh;
     }
-    .move{
-        height:30vh;
+.move{
+    height:30vh;
     }
-    .formWord input{
-        height: 27px;
+.formWord input{
+    height: 27px;
     }
-    .formWord textarea{
+.formWord textarea{
         height:50px;
     }
-    .send{
-        width:90px;
-        padding: 6px 0;      
+.send{
+    width:90px;
+    padding: 6px 0;      
     }
 }
 
 @media screen and (max-width: 360px){
-    .inTouch{
-        padding:20px;
-        margin: 30px auto;
-        height: 450px;
-        width:250px;   
+.inTouch{
+    padding:20px;
+    margin: 30px auto;
+    height: 450px;
+    width:250px;   
     }
-    .contact-containter .contact-liner h1{
-        font-size: 35px;
+.contact-containter .contact-liner h1{
+    font-size: 35px;
     }
-    .formWord{
-        height:300px;
-        width:290px;
+.formWord{
+    height:300px;
+    width:290px;
     }
   
-    .onMove{
-        min-height: 20vh;
+.onMove{
+    min-height: 20vh;
     }
-    .move{
-        height:30vh;
+.move{
+    height:30vh;
     }
-    .formWord input{
-        height: 27px;
+.formWord input{
+    height: 27px;
     }
-    .formWord textarea{
+.formWord textarea{
         height:50px;
     }
-    .send{
-        width:90px;
-        padding: 6px 0;      
-    }
-    
+.send{
+    width:90px;
+    padding: 6px 0;      
+    }  
 }

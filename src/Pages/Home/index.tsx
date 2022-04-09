@@ -58,7 +58,7 @@ export default function Home() {
     <>
        <Header />
       <NewItems/>   
-      <h1>New Feshion</h1> 
+      <h1>New Fashion</h1> 
       <ProductList>
         {allProducts.map((item: CartItem) => (
           <li key={item.product.sku}>

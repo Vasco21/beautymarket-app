@@ -37,6 +37,10 @@ function App() {
     path: '/contact',
     element: <Contacts />,
   }
+  // const store = {
+  //   path: '/contact',
+  //   element: <FindStore />,
+  // }
 
   const teamM = {
     path: '/team',
@@ -70,7 +74,7 @@ function App() {
   };
  
   const navigations = useRoutes([navaBar, teamM, picture]);
-  const contact = useRoutes([contactInfo])
+  const contact = useRoutes([contactInfo,])
   const aboutUs = useRoutes([aboutTeam])
   const routing = useRoutes([mainRoutes, cartRoutes,NewLooks]);
 
