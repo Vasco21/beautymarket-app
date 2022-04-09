@@ -60,7 +60,7 @@ export default function Contact() {
     });
   };
 
-  window.addEventListener("scroll", toggleVisible);
+  // window.addEventListener("scroll", toggleVisible);
 
 		return (
   <div className="h">
