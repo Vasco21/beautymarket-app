@@ -10,6 +10,7 @@ import "./contact.css";
 import emailjs from "@emailjs/browser";
 import { Button } from "./styles";
 import Footer from '../../Pages/Footer/Footer'
+import Menu from '../../components/Slider/sidebar'
 
 const Result = () => {
   return <p>Successfully sent, i will contact you soon!!!</p>;
@@ -61,8 +62,9 @@ export default function Contact() {
 
   window.addEventListener("scroll", toggleVisible);
 
-  return (
-    <div className="h">
+		return (
+  <div className="h">
+	  <Menu/>
       <div className="contact-containter">
         <div className="contact-header">
           <h1>Contact Me</h1>
