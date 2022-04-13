@@ -1,3 +1,7 @@
+import styled from 'styled-components'; 
+export const Container = styled.div`
+
+
 .contact-containter .contact-header h1{
     text-align: center;
     font-size: 50px;
@@ -260,3 +264,5 @@
     padding: 6px 0;      
     }  
 }
+ `
+

@@ -6,7 +6,7 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import "./contact.css";
+import { Container } from "./contact";
 import emailjs from "@emailjs/browser";
 import { Button } from "./styles";
 import Footer from '../../Pages/Footer/Footer'
@@ -20,7 +20,7 @@ export default function Contact() {
   const [result, showResult] = useState(false);
   const [visible, setVisible] = useState(false);
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: any) => {
     e.preventDefault();
     emailjs
       .sendForm(
@@ -63,6 +63,7 @@ export default function Contact() {
   // window.addEventListener("scroll", toggleVisible);
 
 		return (
+      <Container>
   <div className="h">
 	  <Menu/>
       <div className="contact-containter">
@@ -176,5 +177,6 @@ export default function Contact() {
       </div>
 	  <Footer/>
     </div>
+      </Container>
   );
 }
