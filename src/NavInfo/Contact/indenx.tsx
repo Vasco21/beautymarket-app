@@ -130,7 +130,7 @@ export default function Contact() {
                         className="input100"
                         type="text"
                         name="fullName"
-                        placeholder="Your name.."
+                        placeholder="Your name..."
                         required
                       />
                       <br />
