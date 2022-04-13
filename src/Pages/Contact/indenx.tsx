@@ -9,7 +9,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { Container } from "./contact";
 import emailjs from "@emailjs/browser";
 import { Button } from "./styles";
-import Footer from '../../Pages/Footer/Footer'
+import Footer from '../Footer/Footer'
 import Menu from '../../components/Slider/sidebar'
 
 const Result = () => {

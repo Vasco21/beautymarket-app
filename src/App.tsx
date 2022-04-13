@@ -14,7 +14,7 @@ import AppProvider from './provider/AppProvider';
 import GlobalStyle from './Styles/global';
 import { AppContainer } from './Styles/styles';
 
-import Contacts from './NavInfo/Contact/indenx';
+import Contacts from './Pages/Contact/indenx';
 // import FindStore from './NavInfo/FindStore/index';
 // import CreateAndAcc from './NavInfo/CreateAndAcc/index';
 // import Signin from './NavInfo/SignIn/index';
