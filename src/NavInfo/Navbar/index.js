@@ -19,7 +19,7 @@ return (
 			Contact Us
 		</NavLink>
 		<NavLink to='/findstore' activeStyle>
-			Find Store
+			Find a Store
 		</NavLink>
 		{/* <NavLink to='/annual' activeStyle>
 			Annual Report

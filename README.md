@@ -1,5 +1,6 @@
-# Getting Started with Create React App
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2f345f8c-a879-4141-a5bc-a4439f6bd153/deploy-status)](https://app.netlify.com/sites/tourmaline-paletas-425a0f/deploys)
+
+# Getting Started with Create React App
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -13,10 +13,9 @@ import Camera from './Pages/camera/Camera';
 import AppProvider from './provider/AppProvider';
 import GlobalStyle from './Styles/global';
 import { AppContainer } from './Styles/styles';
-
 import Contacts from './Pages/Contact/indenx';
-// import FindStore from './NavInfo/FindStore/index';
-// import CreateAndAcc from './NavInfo/CreateAndAcc/index';
+import FindStore from './Map/Map'
+import Landing from './NavInfo/Layout/index';
 // import Signin from './NavInfo/SignIn/index';
 
 
@@ -37,10 +36,10 @@ function App() {
     path: '/contact',
     element: <Contacts />,
   }
-  // const store = {
-  //   path: '/contact',
-  //   element: <FindStore />,
-  // }
+  const getstore = {
+    path: '/findstore',
+    element: <FindStore />,
+  }
 
   const teamM = {
     path: '/team',
@@ -61,6 +60,12 @@ function App() {
     element: <Home/>
   };
 
+  const signup = {
+    path: '/sign-up',
+    element: <Landing/>
+  };
+
+  
   
 
   const cartRoutes = {
@@ -74,7 +79,7 @@ function App() {
   };
  
   const navigations = useRoutes([navaBar, teamM, picture]);
-  const contact = useRoutes([contactInfo])
+  const contact = useRoutes([contactInfo, getstore, signup])
   const aboutUs = useRoutes([aboutTeam])
   const routing = useRoutes([mainRoutes, cartRoutes,NewLooks]);
 
