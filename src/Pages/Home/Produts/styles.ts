@@ -7,7 +7,6 @@ export const Container = styled.section`
   gap: 2rem;
 `;
 
-
 export const ProductList = styled.ul`
   display: flex;
   flex-direction: column;
@@ -38,7 +37,7 @@ export const ProductList = styled.ul`
 
     padding: 2rem;
 
-    background: pink;
+    background: #fff;
     border-radius: 0.4rem;
     box-shadow: 0.1rem 0.1rem 0.5rem 0 ${(props) => props.theme.shadow};
 
@@ -54,8 +53,7 @@ export const ProductList = styled.ul`
     }
 
     > span {
-        color:black;
-      font-size: 3rem;
+      font-size: 2rem;
       font-weight: bold;
       margin: 1rem 0 1rem;
     }
